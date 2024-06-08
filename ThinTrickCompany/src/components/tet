@@ -1,0 +1,230 @@
+import React, { useState } from 'react';
+import './Courses.css'; // Import your CSS file here
+
+const Courses = () => {
+  const [activeFilter, setActiveFilter] = useState('*');
+
+  const handleFilterClick = (filter) => {
+    setActiveFilter(filter);
+  };
+
+  const filteredCourses = activeFilter === '*'
+    ? courses
+    : courses.filter(course => course.filters.includes(activeFilter));
+
+  return (
+    <div className="gridarea gridarea__2">
+      <div className="container">
+        <div className="row grid__row">
+          <div className="col-xl-5 col-lg-5 col-md-12 col-sm-12" data-aos="fade-up">
+            <div className="section__title__2">
+              <div className="section__title__button">
+                <div className="default__small__button">Course List</div>
+              </div>
+              <div className="section__title__heading__2 section__title__heading__3 heading__fontsize__2">
+                <h2>Perfect Online Course Your Career</h2>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-xl-7 col-lg-7 col-md-12 col-sm-12" data-aos="fade-up">
+            <div className="gridfilter_nav grid__filter__2 gridFilter">
+              <button
+                className={activeFilter === '*' ? 'active' : ''}
+                onClick={() => handleFilterClick('*')}
+              >
+                See All
+              </button>
+              <button
+                className={activeFilter === 'filter1' ? 'active' : ''}
+                onClick={() => handleFilterClick('filter1')}
+              >
+                Data Science
+              </button>
+              <button
+                className={activeFilter === 'filter2' ? 'active' : ''}
+                onClick={() => handleFilterClick('filter2')}
+              >
+                Engineering
+              </button>
+              <button
+                className={activeFilter === 'filter3' ? 'active' : ''}
+                onClick={() => handleFilterClick('filter3')}
+              >
+                Featured
+              </button>
+              <button
+                className={activeFilter === 'filter4' ? 'active' : ''}
+                onClick={() => handleFilterClick('filter4')}
+              >
+                Architecture
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="row grid" data-aos="fade-up">
+          {filteredCourses.map((course, index) => (
+            <div key={index} className={`col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 grid-item ${course.filters.join(' ')}`}>
+              <div className="gridarea__wraper">
+                <div className="gridarea__img">
+                  <a href="course-details.html">
+                    <img loading="lazy" src={course.image} alt="grid" />
+                  </a>
+                  <div className="gridarea__small__button">
+                    <div className={`grid__badge ${course.badgeColor}`}>{course.category}</div>
+                  </div>
+                  <div className="gridarea__small__icon">
+                    <a href="#"><i className="icofont-heart-alt"></i></a>
+                  </div>
+                </div>
+                <div className="gridarea__content">
+                  <div className="gridarea__list">
+                    <ul>
+                      <li>
+                        <i className="icofont-book-alt"></i> {course.lessons} Lesson
+                      </li>
+                      <li>
+                        <i className="icofont-clock-time"></i> {course.duration}
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="gridarea__heading">
+                    <h3><a href="course-details.html">{course.title}</a></h3>
+                  </div>
+                  <div className="gridarea__price">
+                    {course.price} <del>/ {course.originalPrice}</del>
+                    <span> <del className="del__2">{course.discount}</del></span>
+                  </div>
+                  <div className="gridarea__bottom">
+                    <a href="instructor-details.html">
+                      <div className="gridarea__small__img">
+                        <img loading="lazy" src={course.instructor.image} alt="grid" />
+                        <div className="gridarea__small__content">
+                          <h6>{course.instructor.name}</h6>
+                        </div>
+                      </div>
+                    </a>
+                    <div className="gridarea__star">
+                      {Array.from({ length: 5 }).map((_, i) => (
+                        <i key={i} className="icofont-star"></i>
+                      ))}
+                      <span>({course.rating})</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const courses = [
+  {
+    image: "img/grid/grid_1.png",
+    category: "Data & Tech",
+    badgeColor: "",
+    filters: ["filter1", "filter3"],
+    lessons: 23,
+    duration: "1 hr 30 min",
+    title: "Foundation course to understand about software",
+    price: "$32.00",
+    originalPrice: "$67.00",
+    discount: "Free",
+    instructor: {
+      image: "img/grid/grid_small_1.jpg",
+      name: "Micle Jhon"
+    },
+    rating: 44
+  },
+  {
+    image: "img/grid/grid_2.png",
+    category: "Mechanical",
+    badgeColor: "blue__color",
+    filters: ["filter2", "filter3"],
+    lessons: 29,
+    duration: "2 hr 10 min",
+    title: "Nidnies course to understand about software",
+    price: "$32.00",
+    originalPrice: "$67.00",
+    discount: "Free",
+    instructor: {
+      image: "img/grid/grid_small_2.jpg",
+      name: "Rinis Jhon"
+    },
+    rating: 44
+  },
+  {
+    image: "img/grid/grid_3.png",
+    category: "Development",
+    badgeColor: "pink__color",
+    filters: ["filter4", "filter5"],
+    lessons: 25,
+    duration: "1 hr 40 min",
+    title: "Minws course to understand about solution",
+    price: "$40.00",
+    originalPrice: "$67.00",
+    discount: "Free",
+    instructor: {
+      image: "img/grid/grid_small_3.jpg",
+      name: "Micle Jhon"
+    },
+    rating: 44
+  },
+  {
+    image: "img/grid/grid_4.png",
+    category: "Ui & UX Design",
+    badgeColor: "green__color",
+    filters: ["filter4"],
+    lessons: 36,
+    duration: "3 hr 40 min",
+    title: "Design course to understand about solution",
+    price: "$40.00",
+    originalPrice: "$67.00",
+    discount: "Free",
+    instructor: {
+      image: "img/grid/grid_small_4.jpg",
+      name: "Micle Robin"
+    },
+    rating: 44
+  },
+  {
+    image: "img/grid/grid_5.png",
+    category: "Data & Tech",
+    badgeColor: "orange__color",
+    filters: ["filter1", "filter3"],
+    lessons: 36,
+    duration: "3 hr 40 min",
+    title: "Data course to understand about solution",
+    price: "$40.00",
+    originalPrice: "$67.00",
+    discount: "Free",
+    instructor: {
+      image: "img/grid/grid_small_5.jpg",
+      name: "Micle Robin"
+    },
+    rating: 44
+  },
+  {
+    image: "img/grid/grid_6.png",
+    category: "Big Data",
+    badgeColor: "yellow__color",
+    filters: ["filter5", "filter2"],
+    lessons: 30,
+    duration: "3 hr 40 min",
+    title: "Big data to understand about solution package",
+    price: "$40.00",
+    originalPrice: "$67.00",
+    discount: "Free",
+    instructor: {
+      image: "img/grid/grid_small_5.jpg",
+      name: "Micle Robin"
+    },
+    rating: 44
+  }
+];
+
+export default Courses;
