@@ -132,12 +132,12 @@ export default function Footer() {
       <div className="row">
         <div className="col-xl-3 col-lg-3">
           <div className="copyright__logo">
-            <a href="https://html.themewin.com/"><img loading="lazy" src="assets/img/logo/logo_2.png" alt="logo" /></a>
+            <a href="https://html.themewin.com/"><img loading="lazy" src="img/logo/logo_2.png" alt="logo" /></a>
           </div>
         </div>
         <div className="col-xl-6 col-lg-6">
           <div className="footerarea__copyright__content footerarea__copyright__content__2">
-            <p>Copyright © <span>2024</span> by edurock. All Rights Reserved.</p>
+            <p>Copyright © <span>2024</span> by Think-Trick. All Rights Reserved.</p>
           </div>
         </div>
         <div className="col-xl-3 col-lg-3">

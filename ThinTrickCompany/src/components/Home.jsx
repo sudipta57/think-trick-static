@@ -563,14 +563,14 @@ export default function Home() {
       </div>
     </div>
     <div className="aboutarea__img__3">
-      <img loading="lazy" className="aboutarea__3__img__1" src="assets/img/about/about_6.png" alt="about" />
-      <img loading="lazy" className="aboutarea__3__img__2" src="assets/img/about/about_7.png" alt="about" />
-      <img loading="lazy" className="aboutarea__3__img__3" src="assets/img/about/about_9.png" alt="about" />
+      <img loading="lazy" className="aboutarea__3__img__1" src="img/about/about_6.png" alt="about" />
+      <img loading="lazy" className="aboutarea__3__img__2" src="img/about/about_7.png" alt="about" />
+      <img loading="lazy" className="aboutarea__3__img__3" src="img/about/about_9.png" alt="about" />
     </div>
   </div>
   {/* about__section__3__end */}
    {/* blog__section__start */}
-   <div className="blogarea sp_bottom_70 sp_top_100">
+   {/* <div className="blogarea sp_bottom_70 sp_top_100">
     <div className="container">
       <div className="row" data-aos="fade-up">
         <div className="col-xl-12">
@@ -665,7 +665,7 @@ export default function Home() {
       </div>
     </div>
   </div>
-  {/* blog__section__end */}
+  blog__section__end */}
     </>
   )
 }
