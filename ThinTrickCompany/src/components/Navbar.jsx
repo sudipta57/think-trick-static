@@ -8,14 +8,14 @@ export default function Navbar() {
   <div className="topbararea topbararea--2">
     <div className="container">
       <div className="row">
-        <div className="col-xl-6 col-lg-6">
+        <div className="col-lg-6">
           <div className="topbar__left">
             <ul>
               <li>
-                Call Us: +6291170712
+                <a href='tel:9830721610' style={{color: '#fff'}}>Call Us: +91 9830721610</a>
               </li>
-              <li>
-                - Mail Us: think.dev.group@gmail.com
+              <li className='mx-3'>
+                <a href='mailto:think.dev.group@gmail.com' style={{color: '#fff'}}>Mail : think.dev.group@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -26,7 +26,7 @@ export default function Navbar() {
               <i className="icofont-location-pin" />
             </div>
             <div className="topbar__text">
-              <p>kakdwip,west bengal,743371</p>
+              <p><a href="https://maps.app.goo.gl/rY5UZRh2Q2wGJoqo9" style={{color: '#fff'}} target='_blank'>Kakdwip, Gobardhanpur, West Bengal, India, 743371</a></p>
             </div>
             <div className="topbar__list">
               <ul>
@@ -75,8 +75,8 @@ export default function Navbar() {
                   <ul className="headerarea__submenu" style={{minWidth: 300}}>
                     <li><Link to="/web-service">Web Development</Link></li>
                     <li><Link to="/android">Android App Development</Link></li>
-                    <li><Link to="">Digital Marketing</Link></li>
-                    <li><Link to="">Graphics and Logo Design</Link></li>
+                    <li><Link to="/digital-marketing">Digital Marketing</Link></li>
+                    <li><Link to="/graphics-and-logo">Graphics and Logo Design</Link></li>
                   </ul>
                 </li>
                 <li><Link className="headerarea" to="/contact">Contact Us</Link></li>
@@ -128,34 +128,6 @@ export default function Navbar() {
     <div className="mobile-menu-wrap headerarea">
       <div className="mobile-navigation">
         <nav>
-          {/* <ul class="mobile-menu">
-                          <li><a class="headerarea" href="#">Home</a></li>
-                          <li><a class="headerarea" href="#">About Us</a></li>
-                          <li><a class="headerarea" href="#">Our Portfolio</a></li>
-
-                          <li><a class="menu-item-has-children" href="#">Services
-                                  <i class="icofont-rounded-down"></i>
-                              </a>
-                              <ul class="dropdown">
-                                  <li><a href="#">Web Development</a></li>
-                                  <li><a href="#">About (Dark)</a></li>
-                                  <li><a href="blog.html">Blog</a></li>
-                                  <li><a href="blog-dark.html">Blog (Dark)</a></li>
-                                  <li><a href="blog-details.html">Blog Details</a></li>
-                                  <li><a href="blog-details-dark.html">Blog Details (Dark)</a></li>
-                              </ul>
-
-                              <ul class="headerarea__submenu" style="min-width: 300px;">
-                                  <li><a href="#">Web Development</a></li>
-                                  <li><a href="#">Software Development</a></li>
-                                  <li><a href="#">Digital Marketing</a></li>
-                                  <li><a href="#">Graphics and Logo Design</a></li>
-                              </ul>
-                          </li>
-                          <li><a class="headerarea" href="#">Contact Us</a></li>
-
-
-                      </ul> */}
           <ul className="mobile-menu">
             <li className="menu-item-has-children"><Link to="/">Home</Link></li>
             <li className="menu-item-has-children"><Link to="/about">About Us</Link></li>
@@ -165,8 +137,8 @@ export default function Navbar() {
                 <li>
                   <Link to="/web-service">Web Development</Link>
                   <Link to="/android">Android App Development</Link>
-                  <Link to="#">Digital Marketing</Link>
-                  <Link to="#">Graphics and Logo Design</Link>
+                  <Link to="/digital-marketing">Digital Marketing</Link>
+                  <Link to="/graphics-and-logo">Graphics and Logo Design</Link>
                 </li>
               </ul>
             </li>

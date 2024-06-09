@@ -12,6 +12,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Web from './components/services/Web'
 import Android from './components/services/Android'
 import Contact from './components/Contact'
+import Digital_Marketing from './components/services/Digital_Marketing'
+import Graphics_and_Logo from './components/services/Graphics_and_Logo'
+
 // import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
@@ -27,6 +30,8 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/web-service" element={<Web/>} />
           <Route path="/android" element={<Android/>} />
+          <Route path="/digital-marketing" element={<Digital_Marketing/>} />
+          <Route path="/graphics-and-logo" element={<Graphics_and_Logo/>} />
           <Route path="/contact" element={<Contact/>} />
 
 
