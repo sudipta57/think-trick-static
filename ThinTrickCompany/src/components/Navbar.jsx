@@ -4,7 +4,6 @@ import { Outlet, Link } from "react-router-dom";
 export default function Navbar() {
     return (
     <>
-              <main className="main_wrapper overflow-hidden">
   {/* topbar__section__stert */}
   <div className="topbararea topbararea--2">
     <div className="container">
@@ -53,7 +52,7 @@ export default function Navbar() {
   {/* topbar__section__end */}
   {/* headar section start */}
 <header>
-  <div className="headerarea headerarea__2 header__sticky header__area">
+  <div className="headerarea headerarea__2 header__sticky header__area sticky">
     <div className="container desktop__menu__wrapper">
       <div className="row">
         <div className="col-xl-2 col-lg-2 col-md-6">
@@ -74,7 +73,6 @@ export default function Navbar() {
                     <i className="icofont-rounded-down" />
                   </a>
                   <ul className="headerarea__submenu" style={{minWidth: 300}}>
-                    {/* <li><a href="#">Web Development<span class="mega__menu__label">Online Store</span></a></li> */}
                     <li><Link to="/web-service">Web Development</Link></li>
                     <li><Link to="/android">Android App Development</Link></li>
                     <li><Link to="">Digital Marketing</Link></li>
@@ -84,14 +82,6 @@ export default function Navbar() {
                 <li><Link className="headerarea" to="/contact">Contact Us</Link></li>
               </ul>
             </nav>
-            {/* <nav>
-                              <ul>
-                                  <li><a class="headerarea" href="#">Home</a></li>
-                                  <li><a class="headerarea" href="#">About Us</a></li>
-                                  <li><a class="headerarea" href="#">Contact Us</a></li>
-                                  <li><a class="headerarea" href="#">About Us</a></li>
-                              </ul>
-                          </nav> */}
           </div>
         </div>
         <div className="col-xl-3 col-lg-3 col-md-6">
@@ -207,10 +197,6 @@ export default function Navbar() {
   </div>
 </div>
 {/* Mobile Menu end Here */}
-
-
-  
-</main>
 
 </>
 )
