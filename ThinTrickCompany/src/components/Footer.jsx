@@ -108,20 +108,18 @@ export default function Footer() {
             <div className="footerarea__list">
               <ul>
                 <li>
-                  <a href="#">Ui Ux Design</a>
+                <a href='tel:9830721610' style={{color: '#fff'}}>Call Us: +91 9830721610</a>
                 </li>
                 <li>
-                  <a href="#">Web Development</a>
+                <a href='mailto:think.dev.group@gmail.com' style={{color: '#fff', whiteSpace: 'nowrap'}}>Mail : think.dev.group@gmail.com</a>
                 </li>
                 <li>
-                  <a href="#">Business Strategy</a>
+                <p><a href="https://maps.app.goo.gl/rY5UZRh2Q2wGJoqo9" style={{color: '#fff', whiteSpace: 'nowrap'}} target='_blank'>Kakdwip, West Bengal - 743371</a></p>
                 </li>
                 <li>
-                  <a href="#">Softwere Development</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1119.7535249653952!2d88.1815273!3d21.8660114!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02556b781a8369%3A0xacd131f109615e69!2sTECHNO%20SYSTEMS!5e1!3m2!1sen!2sin!4v1717931264900!5m2!1sen!2sin" width={400} height={150} style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
                 </li>
-                <li>
-                  <a href="#">Business English</a>
-                </li>
+                
               </ul>
             </div>
           </div>
