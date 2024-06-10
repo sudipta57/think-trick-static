@@ -1,15 +1,14 @@
-import React from 'react'
-import Homeslider from './home_slider/Homeslider'
-
+import React from "react";
+import Homeslider from "./home_slider/Homeslider";
 
 export default function Home() {
   return (
     <>
       <main class="main_wrapper overflow-hidden">
-      <Homeslider/>
+        <Homeslider />
         {/* brand__section__end */}
         {/* aboutarea__2__section__start */}
-        <div className="aboutarea__2 sp_top_30">
+        <div className="aboutarea__2 sp_top_100">
           <div className="container">
             <div className="row">
               <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" data-aos="fade-up">
@@ -37,46 +36,48 @@ export default function Home() {
                     <h4>Welcome to Think Trick Platform</h4>
                   </div>
                   <div className="aboutarea__para aboutarea__para__2">
-                    <p>We have a goal to provide Top Notch IT Services and Digital Marketing services to each and every business. No brand or business should remain invisible in this tech-driven market and must be there in front of the whole world. Since our establishment, we served numerous clients and satisfied them with our world-class solutions. From simple website designing to complete digital marketing solutions, we are here to meet your business needs.</p>
+                    <p style={{ color: "#000", fontWeight: "bold" }}>
+                      We have a goal to provide Top Notch IT Services and Digital Marketing services to each and every business. No brand or business should remain invisible in this tech-driven market and must be there in front of the whole world. Since our establishment, we served numerous clients and satisfied them with our world-class solutions. From simple website designing to complete digital marketing solutions, we are here to meet your business needs.
+                    </p>
                   </div>
 
-                  <div className='row'>
-                    <div className='col-xl-8 col-lg-3 col-md-6 col-sm-6 col-6'>
-                      <div className="aboutarea__list__2">
-                        <h3>Our Mission</h3>
-                        <ul>
-                          <li>
-                            Our mission is to grow and prosper as one of the renowned names in the field of technology and digital marketing with the right strategies. We together with our client want to conquer the market with a phenomenal online presence. The tailored-made services are purely dedicated to meeting various IT services Digital Marketing solutions. Helping and supporting our clients to recognize the worth of their business and providing them with the perfect solutions.
-                          </li>
-                        </ul>
-
-                      </div>
-                    </div>
-                    <div className='col-xl-4 col-lg-3 col-md-6 col-sm-6 col-6'>
-                      <div className="aboutarea__list__2">
-                        <h3>Our Vision</h3>
-                        <ul>
-                          <li>
-                            Our vision is to experience confidence and be trusted by the clients as one of the reputed web development companies. We want to fulfill the dream of every business and brand of being successful in the digital era.
-                          </li>
-                        </ul>
-
-                      </div>
-                    </div>
+                  <div className="aboutarea__list__2">
+                    <ul>
+                      <li>
+                        <i className="icofont-check" /> Lorem Ipsum is simply dummy
+                      </li>
+                      <li>
+                        <i className="icofont-check" /> Explore a variety of fresh educational teach
+                      </li>
+                      <li>
+                        <i className="icofont-check" /> Lorem Ipsum is simply dummy text of
+                      </li>
+                    </ul>
                   </div>
-                  {/* <div className="aboutarea__list__2">
-              <ul>
-                <li>
-                  <i className="icofont-check" /> Lorem Ipsum is simply dummy
-                </li>
-                <li>
-                  <i className="icofont-check" /> Explore a variety of fresh educational teach
-                </li>
-                <li>
-                  <i className="icofont-check" /> Lorem Ipsum is simply dummy text of
-                </li>
-              </ul>
-            </div> */}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="container sp_top_50">
+            <div className="row">
+              <div className="col-xl-6 col-md-6 col-sm-12 col-12 our-mission-sec">
+                <div className="in-sec">
+                  <div className="aboutarea__list__2">
+                    <h3>Our Mission</h3>
+                    <ul>
+                      <li>Our mission is to grow and prosper as one of the renowned names in the field of technology and digital marketing with the right strategies. We together with our client want to conquer the market with a phenomenal online presence. The tailored-made services are purely dedicated to meeting various IT services Digital Marketing solutions. Helping and supporting our clients to recognize the worth of their business and providing them with the perfect solutions.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-6 col-md-6 col-sm-12 col-12 our-vission-section">
+                <div className="in-sec">
+                  <div className="aboutarea__list__2">
+                    <h3>Our Vision</h3>
+                    <ul>
+                      <li>Our vision is to experience confidence and be trusted by the clients as one of the reputed web development companies. We want to fulfill the dream of every business and brand of being successful in the digital era.</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -84,8 +85,8 @@ export default function Home() {
         </div>
         {/* aboutarea__2__section__end */}
         {/* counter__section__start */}
-        <div className="counterarea sp_bottom_100 sp_top_50">
-          <div className="container">
+        <div className="counterarea">
+          <div className="container in-sec sp_bottom_50 sp_top_50">
             <div className="row">
               <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12" data-aos="fade-up">
                 <div className="counterarea__text__wraper">
@@ -153,23 +154,18 @@ export default function Home() {
                 </div>
                 <div className="populerarea__content__wraper__2">
                   <div className="section__title ">
-                    <div className="section__title__button">
-                      {/* <div className="default__small__button">Populer Subject</div> */}
-                    </div>
+                    <div className="section__title__button">{/* <div className="default__small__button">Populer Subject</div> */}</div>
                     <div className="section__title__heading">
-                      <h2>Our Servies
-                      </h2>
+                      <h2>Our Servies</h2>
                     </div>
                   </div>
                   <div className="populerarea__content__2">
-                    <p className="populerarea__para__1">Construction is a general term meaning the art and
-                      science to form systems organizations, and comes from Latin Construction is</p>
-                    <p className="populerarea__para__2">Construction is a general term meaning the art and
-                      science to form systems organizations, and comes from Latin Construction is a
-                      organizations, and comes from Latin construction and Old</p>
+                    <p className="populerarea__para__1" style={{color: '#000'}}>Construction is a general term meaning the art and science to form systems organizations, and comes from Latin Construction is</p>
+                    <p className="populerarea__para__2" style={{color: '#000'}}>Construction is a general term meaning the art and science to form systems organizations, and comes from Latin Construction is a organizations, and comes from Latin construction and Old</p>
                   </div>
                   <div className="populerarea__button__2">
-                    <a className="default__button" href="#">Explore More
+                    <a className="default__button" href="#">
+                      Explore More
                       <i className="icofont-long-arrow-right" />
                     </a>
                   </div>
@@ -197,11 +193,14 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="service__content service__content__2">
-                        <h3><a href="course-details.html">Software Development</a></h3>
+                        <h3>
+                          <a href="course-details.html">Software Development</a>
+                        </h3>
                         <p>Software development requires a range of skills and expertise, including programming languages… </p>
                       </div>
                       <div className="service__button">
-                        <a href="#">View Subject
+                        <a href="#">
+                          View Subject
                           <i className="icofont-long-arrow-right" />
                         </a>
                       </div>
@@ -214,7 +213,10 @@ export default function Home() {
                     <div className="single__service">
                       <div className="service__img">
                         <svg className="service__icon" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M45.8483 26.6935C45.3965 26.2639 44.7953 26.0262 44.1558 26.0262C43.5164 26.0262 42.9166 26.2639 42.4634 26.6935L33.7409 34.9886C33.7306 34.9886 33.7183 34.9867 33.708 34.9867H25.1438C25.1438 34.9541 25.1458 34.9229 25.1458 34.8898C25.1458 34.2537 25.0301 33.6443 24.8165 33.0772H29.4735C29.7924 33.6951 30.4593 34.1214 31.2316 34.1214C32.314 34.1214 33.193 33.2873 33.193 32.258C33.193 31.2287 32.314 30.3946 31.2316 30.3946C30.4593 30.3946 29.7924 30.821 29.4735 31.4389H23.8321C22.7928 30.2507 21.2243 29.4949 19.4716 29.4949C17.9393 29.4949 16.5502 30.0736 15.53 31.0111L15.5281 31.0092L2.44995 43.5669H15.5486L19.0217 40.2842H33.708C34.1956 40.2842 34.6542 40.1645 35.0526 39.9548C35.325 39.8434 35.5749 39.6827 35.79 39.4776L45.8488 29.9124C46.3015 29.4832 46.5499 28.911 46.5499 28.3029C46.5499 27.6949 46.3015 27.1231 45.8483 26.6935ZM19.4716 37.1422C18.1633 37.1422 17.1034 36.1325 17.1034 34.8902C17.1034 33.6461 18.1633 32.6369 19.4716 32.6369C20.7799 32.6369 21.8397 33.6466 21.8397 34.8902C21.8397 36.1325 20.7799 37.1422 19.4716 37.1422ZM33.6664 38.9106C32.9255 38.9106 32.3253 38.3402 32.3253 37.6352C32.3253 36.9321 32.925 36.3599 33.6664 36.3599C34.4077 36.3599 35.0075 36.9321 35.0075 37.6352C35.0075 38.3402 34.4077 38.9106 33.6664 38.9106ZM36.3001 36.6749C36.133 36.2634 35.8606 35.9028 35.5127 35.6209L42.0537 29.4026C42.2727 29.7814 42.602 30.096 43.0019 30.3024L36.3001 36.6749ZM36.231 9.4762H28.4753V8.49301H36.231V9.4762ZM36.231 12.0986H28.4753V11.1155H36.231V12.0986ZM23.3048 9.4762H15.5486V8.49301H23.3044L23.3048 9.4762ZM23.3048 12.0986H15.5486V11.1155H23.3044L23.3048 12.0986ZM41.057 5.87011H39.3308V4.23132H28.589C27.7295 4.23132 26.9215 4.55004 26.3139 5.1283C26.1517 5.28253 26.0106 5.45121 25.8886 5.63014C25.7666 5.45121 25.6255 5.28253 25.4633 5.1283C24.8557 4.55004 24.0477 4.23132 23.1882 4.23132H12.4464V5.87011H10.7231V23.8991H24.0217C24.2677 24.6582 25.011 25.2103 25.8901 25.2103C26.7691 25.2103 27.5125 24.6586 27.7585 23.8991H41.057V5.87011ZM27.0455 5.82305C27.4576 5.43071 28.0059 5.2145 28.589 5.2145H38.2964L38.2797 20.6211H30.4471C29.0344 20.6211 27.6364 20.9873 26.4237 21.6644L26.407 7.29176C26.4065 6.73727 26.6329 6.21586 27.0455 5.82305ZM13.4803 5.21497H23.1877C23.7708 5.21497 24.3191 5.43118 24.7312 5.82352C25.1433 6.21586 25.3702 6.73773 25.3697 7.29223L25.353 21.6653C24.1388 20.9878 22.7413 20.6215 21.3296 20.6215H13.4803V5.21497Z" fill="#5F2DED" />
+                          <path
+                            d="M45.8483 26.6935C45.3965 26.2639 44.7953 26.0262 44.1558 26.0262C43.5164 26.0262 42.9166 26.2639 42.4634 26.6935L33.7409 34.9886C33.7306 34.9886 33.7183 34.9867 33.708 34.9867H25.1438C25.1438 34.9541 25.1458 34.9229 25.1458 34.8898C25.1458 34.2537 25.0301 33.6443 24.8165 33.0772H29.4735C29.7924 33.6951 30.4593 34.1214 31.2316 34.1214C32.314 34.1214 33.193 33.2873 33.193 32.258C33.193 31.2287 32.314 30.3946 31.2316 30.3946C30.4593 30.3946 29.7924 30.821 29.4735 31.4389H23.8321C22.7928 30.2507 21.2243 29.4949 19.4716 29.4949C17.9393 29.4949 16.5502 30.0736 15.53 31.0111L15.5281 31.0092L2.44995 43.5669H15.5486L19.0217 40.2842H33.708C34.1956 40.2842 34.6542 40.1645 35.0526 39.9548C35.325 39.8434 35.5749 39.6827 35.79 39.4776L45.8488 29.9124C46.3015 29.4832 46.5499 28.911 46.5499 28.3029C46.5499 27.6949 46.3015 27.1231 45.8483 26.6935ZM19.4716 37.1422C18.1633 37.1422 17.1034 36.1325 17.1034 34.8902C17.1034 33.6461 18.1633 32.6369 19.4716 32.6369C20.7799 32.6369 21.8397 33.6466 21.8397 34.8902C21.8397 36.1325 20.7799 37.1422 19.4716 37.1422ZM33.6664 38.9106C32.9255 38.9106 32.3253 38.3402 32.3253 37.6352C32.3253 36.9321 32.925 36.3599 33.6664 36.3599C34.4077 36.3599 35.0075 36.9321 35.0075 37.6352C35.0075 38.3402 34.4077 38.9106 33.6664 38.9106ZM36.3001 36.6749C36.133 36.2634 35.8606 35.9028 35.5127 35.6209L42.0537 29.4026C42.2727 29.7814 42.602 30.096 43.0019 30.3024L36.3001 36.6749ZM36.231 9.4762H28.4753V8.49301H36.231V9.4762ZM36.231 12.0986H28.4753V11.1155H36.231V12.0986ZM23.3048 9.4762H15.5486V8.49301H23.3044L23.3048 9.4762ZM23.3048 12.0986H15.5486V11.1155H23.3044L23.3048 12.0986ZM41.057 5.87011H39.3308V4.23132H28.589C27.7295 4.23132 26.9215 4.55004 26.3139 5.1283C26.1517 5.28253 26.0106 5.45121 25.8886 5.63014C25.7666 5.45121 25.6255 5.28253 25.4633 5.1283C24.8557 4.55004 24.0477 4.23132 23.1882 4.23132H12.4464V5.87011H10.7231V23.8991H24.0217C24.2677 24.6582 25.011 25.2103 25.8901 25.2103C26.7691 25.2103 27.5125 24.6586 27.7585 23.8991H41.057V5.87011ZM27.0455 5.82305C27.4576 5.43071 28.0059 5.2145 28.589 5.2145H38.2964L38.2797 20.6211H30.4471C29.0344 20.6211 27.6364 20.9873 26.4237 21.6644L26.407 7.29176C26.4065 6.73727 26.6329 6.21586 27.0455 5.82305ZM13.4803 5.21497H23.1877C23.7708 5.21497 24.3191 5.43118 24.7312 5.82352C25.1433 6.21586 25.3702 6.73773 25.3697 7.29223L25.353 21.6653C24.1388 20.9878 22.7413 20.6215 21.3296 20.6215H13.4803V5.21497Z"
+                            fill="#5F2DED"
+                          />
                           <rect x={15} y="8.54175" width={8} height="0.993317" fill="#FFB31F" />
                           <rect x={28} y="8.54175" width={8} height="0.993317" fill="#FFB31F" />
                           <rect x={15} y="11.5198" width={8} height="0.993319" fill="#FFB31F" />
@@ -227,11 +229,14 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="service__content service__content__2">
-                        <h3><a href="course-details.html">Web Development</a></h3>
+                        <h3>
+                          <a href="course-details.html">Web Development</a>
+                        </h3>
                         <p>At present, web presence is not an option but a necessity for every business … </p>
                       </div>
                       <div className="service__button">
-                        <a href="#">View Subject
+                        <a href="#">
+                          View Subject
                           <i className="icofont-long-arrow-right" />
                         </a>
                       </div>
@@ -246,7 +251,10 @@ export default function Home() {
                     <div className="single__service ss_margin">
                       <div className="service__img">
                         <svg className="service__icon" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M28.525 44.0499H20.4753C18.7037 44.0499 17.2625 42.7046 17.2625 41.0509C17.2625 36.723 15.7895 32.4935 13.115 29.1417C11.2743 26.835 10.3045 24.0912 10.3103 21.2067C10.3172 17.7711 11.7888 14.4906 14.4541 11.9697C17.1201 9.44796 20.6146 8.03229 24.2939 7.98346C28.1232 7.9323 31.7312 9.28502 34.4566 11.7915C37.1864 14.302 38.6898 17.6547 38.6898 21.2322C38.6898 24.0423 37.7594 26.7272 35.9993 28.9965C33.2113 32.5912 31.7377 36.7597 31.7377 41.0511C31.7377 42.7046 30.2964 44.0499 28.525 44.0499ZM24.5008 10.6603C24.4454 10.6603 24.3904 10.6607 24.3349 10.6614C18.3004 10.7416 13.1927 15.5731 13.1814 21.2117C13.1767 23.5138 13.9501 25.7029 15.418 27.5424C18.4589 31.3533 20.1335 36.1507 20.1335 41.0509C20.1335 41.2278 20.2869 41.3716 20.4752 41.3716H28.5249C28.7133 41.3716 28.8665 41.2278 28.8665 41.051C28.8665 36.1921 30.5286 31.4809 33.6733 27.4265C35.0768 25.6168 35.8187 23.4749 35.8187 21.2321C35.8187 18.3773 34.6191 15.7019 32.4409 13.6987C30.3067 11.7359 27.4925 10.6603 24.5008 10.6603Z" fill="#5F2DED" />
+                          <path
+                            d="M28.525 44.0499H20.4753C18.7037 44.0499 17.2625 42.7046 17.2625 41.0509C17.2625 36.723 15.7895 32.4935 13.115 29.1417C11.2743 26.835 10.3045 24.0912 10.3103 21.2067C10.3172 17.7711 11.7888 14.4906 14.4541 11.9697C17.1201 9.44796 20.6146 8.03229 24.2939 7.98346C28.1232 7.9323 31.7312 9.28502 34.4566 11.7915C37.1864 14.302 38.6898 17.6547 38.6898 21.2322C38.6898 24.0423 37.7594 26.7272 35.9993 28.9965C33.2113 32.5912 31.7377 36.7597 31.7377 41.0511C31.7377 42.7046 30.2964 44.0499 28.525 44.0499ZM24.5008 10.6603C24.4454 10.6603 24.3904 10.6607 24.3349 10.6614C18.3004 10.7416 13.1927 15.5731 13.1814 21.2117C13.1767 23.5138 13.9501 25.7029 15.418 27.5424C18.4589 31.3533 20.1335 36.1507 20.1335 41.0509C20.1335 41.2278 20.2869 41.3716 20.4752 41.3716H28.5249C28.7133 41.3716 28.8665 41.2278 28.8665 41.051C28.8665 36.1921 30.5286 31.4809 33.6733 27.4265C35.0768 25.6168 35.8187 23.4749 35.8187 21.2321C35.8187 18.3773 34.6191 15.7019 32.4409 13.6987C30.3067 11.7359 27.4925 10.6603 24.5008 10.6603Z"
+                            fill="#5F2DED"
+                          />
                           <path d="M34.5884 35.3186H14.4117V37.9969H34.5884V35.3186Z" fill="#5F2DED" />
                           <path d="M23.8501 30.4466L21.4301 29.0054L24.8268 24.0417H21.5536C21.0311 24.0417 20.5498 23.7768 20.297 23.3501C20.0444 22.9235 20.0602 22.4024 20.3384 21.9897L25.0805 14.9543L27.5109 16.38L24.1519 21.3634H27.4464C27.9708 21.3634 28.4533 21.63 28.7053 22.059C28.9573 22.4879 28.9385 23.0109 28.6564 23.4232L23.8501 30.4466Z" fill="#FFB31F" />
                           <path d="M25.9355 2.17908H23.0645V6.19654H25.9355V2.17908Z" fill="#5F2DED" />
@@ -260,11 +268,14 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="service__content service__content__2">
-                        <h3><a href="#">Android App Development</a></h3>
+                        <h3>
+                          <a href="#">Android App Development</a>
+                        </h3>
                         <p>Construction is a general term the art and science to form </p>
                       </div>
                       <div className="service__button">
-                        <a href="#">View Subject
+                        <a href="#">
+                          View Subject
                           <i className="icofont-long-arrow-right" />
                         </a>
                       </div>
@@ -290,11 +301,14 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="service__content service__content__2">
-                        <h3><a href="course-details.html">Graphics Design</a></h3>
+                        <h3>
+                          <a href="course-details.html">Graphics Design</a>
+                        </h3>
                         <p>Construction is a general term the art and science to form </p>
                       </div>
                       <div className="service__button">
-                        <a href="#">View Subject
+                        <a href="#">
+                          View Subject
                           <i className="icofont-long-arrow-right" />
                         </a>
                       </div>
@@ -323,8 +337,7 @@ export default function Home() {
                   <div className="default__small__button">Hosting Plan</div>
                 </div>
                 <div className="section__title__heading">
-                  <h2>We Also Provide Hosting And Domains.
-                  </h2>
+                  <h2>We Also Provide Hosting And Domains.</h2>
                 </div>
               </div>
             </div>
@@ -332,8 +345,6 @@ export default function Home() {
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" data-aos="fade-up">
                 <div className="pricingarea__content__wraper">
                   <div className="pricingarea__heading">
-
-
                     <p>For Statis</p>
                   </div>
                   <div className="pricingarea__list">
@@ -355,13 +366,11 @@ export default function Home() {
                       </li>
                     </ul>
                   </div>
-
                 </div>
               </div>
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" data-aos="fade-up">
                 <div className="pricingarea__content__wraper">
                   <div className="pricingarea__heading">
-
                     <p>For Dynamic</p>
                   </div>
                   <div className="pricingarea__list">
@@ -384,7 +393,9 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="pricingarea__button pricingarea__button__2">
-                    <a className="default__button" href="#">Get Started</a>
+                    <a className="default__button" href="#">
+                      Get Started
+                    </a>
                   </div>
                   <div className="pricingarea__text">
                     <p>No creadit card required</p>
@@ -399,8 +410,9 @@ export default function Home() {
                       <img loading="lazy" src="img/icon/price__3.png" alt />
                     </div>
                     <div className="pricingarea__number">
-                      <h1><span className="price__currency">$</span>59<span className="price__durition">/
-                        month</span></h1>
+                      <h1>
+                        <span className="price__currency">$</span>59<span className="price__durition">/ month</span>
+                      </h1>
                     </div>
                     <p>Perfect for startup</p>
                   </div>
@@ -424,7 +436,9 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="pricingarea__button">
-                    <a className="default__button" href="#">Get Started</a>
+                    <a className="default__button" href="#">
+                      Get Started
+                    </a>
                   </div>
                   <div className="pricingarea__text">
                     <p>No creadit card required</p>
@@ -445,17 +459,19 @@ export default function Home() {
                     <div className="default__small__button">Course List</div>
                   </div>
                   <div className="section__title__heading">
-                    <h2>What They Say
-                      <br />About us
+                    <h2>
+                      What They Say
+                      <br />
+                      About us
                     </h2>
                   </div>
                 </div>
                 <div className="aboutarea__3__content">
-                  <p>Construction is a general term meaning the art and science to form systems organizations
-                    and comes from Latin Construction is</p>
+                  <p>Construction is a general term meaning the art and science to form systems organizations and comes from Latin Construction is</p>
                 </div>
                 <div className="aboutarea__3__button">
-                  <a className="default__button" href="#">Explore More
+                  <a className="default__button" href="#">
+                    Explore More
                     <i className="icofont-long-arrow-right" />
                   </a>
                 </div>
@@ -463,8 +479,7 @@ export default function Home() {
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 custom__review__grid" data-aos="fade-up">
                 <div className="aboutarea__content__wraper__3">
                   <div className="aboutarea__para__3">
-                    <p>“The other hand we denounce righteou indg ation men who are so beguiled and demoraliz
-                      by the the mo ment.Dislike men who so development co” </p>
+                    <p>“The other hand we denounce righteou indg ation men who are so beguiled and demoraliz by the the mo ment.Dislike men who so development co” </p>
                     <div className="aboutarea__icon__3">
                       <i className="icofont-quote-left" />
                     </div>
@@ -481,8 +496,7 @@ export default function Home() {
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 custom__review__grid" data-aos="fade-up">
                 <div className="aboutarea__content__wraper__3">
                   <div className="aboutarea__para__3">
-                    <p>“The other hand we denounce righteou indg ation men who are so beguiled and demoraliz
-                      by the the mo ment.Dislike men who so development co” </p>
+                    <p>“The other hand we denounce righteou indg ation men who are so beguiled and demoraliz by the the mo ment.Dislike men who so development co” </p>
                     <div className="aboutarea__icon__3">
                       <i className="icofont-quote-left" />
                     </div>
@@ -604,5 +618,5 @@ export default function Home() {
   blog__section__end */}
       </main>
     </>
-  )
+  );
 }

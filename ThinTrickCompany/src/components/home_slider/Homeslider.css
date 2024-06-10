@@ -15,12 +15,7 @@ h4,
 h6 {
   transform: scaleY(0.9);
 }
-a {
-  color: #e8dff6;
-}
-p {
-  color: #fff;
-}
+
 .body-overlay {
    background: #110725;
 }
@@ -106,7 +101,7 @@ p {
   z-index: 1;
 }
 .outer-left .outer-left-img-main img {
-  width: 300px;
+  width: 350px;
   border: 3px solid #fff;
 }
 .outer-left .timeline {
@@ -123,7 +118,7 @@ p {
   font-weight: 700;
   line-height: 1;
   padding: 20px 5px;
-  margin-left: 350px;
+  margin-left: 380px;
   text-shadow: 8px 4px 2px black;
 
   position: absolute;
@@ -212,7 +207,7 @@ p {
 }
 .inner .toggler a:hover {
   opacity: 0.9;
-  transform: scale(1.03);
+  cursor: pointer;
 }
 .inner .previous-article {
   position: absolute;
@@ -257,7 +252,12 @@ p {
     position: relative;
     width: 250px;
   }
+  .outer-left .outer-left-img-main img {
+    width: 260px;
+    border: 3px solid #fff;
+}
   .outer-left .headline {
+    display: none;
     font-size: 6em;
     font-weight: 700;
     line-height: 75px;

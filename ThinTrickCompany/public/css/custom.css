@@ -1,4 +1,25 @@
-.footerarea__wrapper{
-    padding-top: 50px;
-    padding-bottom: 5px;
+
+.footerarea__wrapper {
+  padding-top: 50px;
+  padding-bottom: 5px;
+}
+
+.our-mission-sec {
+  background-color: aquamarine;
+  padding: 50px;
+}
+.our-vission-section {
+  background-color: rgb(189, 255, 127);
+  padding: 50px;
+}
+
+.counterarea .in-sec{
+    background-color: rgb(52, 50, 201);
+    color: #fff;
+}
+.counterarea__text__wraper .counter__content__wraper p{
+    color: #fff;
+}
+.counterarea__text__wraper .counter__content__wraper .counter__number{
+    color: #fff;
 }
