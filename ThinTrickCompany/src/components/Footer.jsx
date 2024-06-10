@@ -6,28 +6,6 @@ export default function Footer() {
           {/* footer__section__start */}
 <div className="footerarea">
   <div className="container">
-    {/* <div className="footerarea__newsletter__wraper">
-      <div className="row">
-        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-up">
-          <div className="footerarea__text">
-            <h3>Still You Need Our <span>Support</span> ?</h3>
-            <p>Don’t wait make a smart &amp; logical quote here. Its pretty easy.</p>
-          </div>
-        </div>
-        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-up">
-          <div className="footerarea__newsletter">
-            <div className="footerarea__newsletter__input">
-              <form action="#">
-                <input type="text" placeholder="Enter your email here" />
-                <div className="footerarea__newsletter__button">
-                  <button type="submit" className="subscribe__btn">Subscribe Now</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> */}
     <div className="footerarea__wrapper footerarea__wrapper__2">
       <div className="row">
         <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-up">
@@ -117,7 +95,7 @@ export default function Footer() {
                 <p><a href="https://maps.app.goo.gl/rY5UZRh2Q2wGJoqo9" style={{color: '#fff', whiteSpace: 'nowrap'}} target='_blank'>Kakdwip, West Bengal - 743371</a></p>
                 </li>
                 <li>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1119.7535249653952!2d88.1815273!3d21.8660114!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02556b781a8369%3A0xacd131f109615e69!2sTECHNO%20SYSTEMS!5e1!3m2!1sen!2sin!4v1717931264900!5m2!1sen!2sin" width={400} height={150} style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1119.7535249653952!2d88.1815273!3d21.8660114!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02556b781a8369%3A0xacd131f109615e69!2sTECHNO%20SYSTEMS!5e1!3m2!1sen!2sin!4v1717931264900!5m2!1sen!2sin" width={'100%'} height={150} style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
                 </li>
                 
               </ul>
