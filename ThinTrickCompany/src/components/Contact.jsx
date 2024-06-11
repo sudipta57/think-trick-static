@@ -4,20 +4,19 @@ import { Outlet, Link } from "react-router-dom";
 export default function Contact() {
   return (
     <>
-      <div className="breadcrumbarea">
+      <div className="breadcrumbarea" style={{ background: 'linear-gradient(45deg, #0f00f7, #996767)', paddingTop: '150px',paddingBottom: '100px' }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
               <div className="breadcrumb__content__wraper" data-aos="fade-up">
                 <div className="breadcrumb__title">
-                  <h4 className="heading">Contact Page</h4>
+                  <h4 className="heading" style={{color: '#fff', fontWeight: 'bold', fontSize: '50px'}}>Contact Us</h4>
                 </div>
                 <div className="breadcrumb__inner">
                   <ul>
-                    <li>
-                      <Link to="/">Home</Link>
-                    </li>
-                    <li>Contact page</li>
+                  <li><Link style={{color: '#fff'}} to="/">Home</Link></li>
+                  <li style={{color: '#fff'}}>Contact us</li>
                   </ul>
                 </div>
               </div>
@@ -34,9 +33,9 @@ export default function Contact() {
       {/* breadcrumbarea__section__end*/}
       {/* .contact__section__start */}
       <div className="contact__section sp_top_100 sp_bottom_50" data-aos="fade-up">
-        <div className="container desktop__menu__wrapper">
+        <div className="container">
           <div className="row">
-            <div className="col-4">
+            <div className="col-md-6 col-lg-4">
               <div className="row">
                 <div className="col-12">
                   <div className="contact__form__heading" style={{paddingBottom: 25}} data-aos="fade-up">
@@ -160,7 +159,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-6 col-lg-8">
               <div className="contact__from__wraper">
                 <div className="container">
                   <div className="row">
@@ -223,6 +222,16 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="container">
+          <div className="row">
+            <div className="col-12 single__contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5853.067584386183!2d88.181969!3d21.866624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02556b781a8369%3A0xacd131f109615e69!2sTECHNO%20SYSTEMS!5e1!3m2!1sen!2sin!4v1718085025185!5m2!1sen!2sin" width={'100%'} height={300} style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+
             </div>
           </div>
         </div>
