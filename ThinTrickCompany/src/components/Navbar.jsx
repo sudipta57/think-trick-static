@@ -58,7 +58,7 @@ export default function Navbar() {
         <div className="col-xl-2 col-lg-2 col-md-6">
           <div className="headerarea__left">
             <div className="headerarea__left__logo">
-              <a href="index.html"><img loading="lazy" src="img/logo/logo_1.png" alt="logo" /></a>
+              <a href="index.html"><img loading="lazy" src="img/logo/logo_1.png" alt="logo" style={{width: '200px'}} /></a>
             </div>
           </div>
         </div>
