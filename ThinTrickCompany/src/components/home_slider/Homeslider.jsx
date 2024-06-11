@@ -25,9 +25,9 @@ export default function Homeslider() {
   return (
     <>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
-      <link rel="stylesheet" href="./style.css" />
+      
       <div className="body-overlay">
-        <div className="container">
+        <div className="container" style={{position: 'relative'}}>
           {/* ==================== */}
           <div className="leftandin animated">
             <div className="outer-left">
