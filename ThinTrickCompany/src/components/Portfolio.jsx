@@ -14,18 +14,18 @@ export default function Portfolio() {
 
   return (
     <>
-    <div className="breadcrumbarea">
+    <div className="breadcrumbarea" style={{ background: 'linear-gradient(45deg, #0f00f7, #996767)', paddingTop: '100px',paddingBottom: '100px' }}>
     <div className="container">
       <div className="row">
         <div className="col-xl-12">
           <div className="breadcrumb__content__wraper" data-aos="fade-up">
             <div className="breadcrumb__title">
-              <h4 className="heading">Portfolio Page</h4>
+              <h4 className="heading" style={{color: '#fff', fontWeight: 'bold', fontSize: '50px'}}>Portfolio Page</h4>
             </div>
             <div className="breadcrumb__inner">
               <ul>
-                <li><Link to="/">Home</Link></li>
-                <li>Portfolio page</li>
+                <li><Link style={{color: '#fff'}} to="/">Home</Link></li>
+                <li style={{color: '#fff'}}>Portfolio page</li>
               </ul>
             </div>
           </div>
