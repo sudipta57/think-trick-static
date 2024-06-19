@@ -69,6 +69,7 @@ export default function Navbar() {
                 <li><Link className="headerarea" to="/">Home</Link></li>
                 <li><Link className="headerarea" to="/about">About Us</Link></li>
                 <li><Link className="headerarea" to="portfolio">Our Portfolio</Link></li>
+                <li><Link className="headerarea" to="/ourteam">Our Team</Link></li>
                 <li><a className="headerarea__has__dropdown" href="#">Services
                     <i className="icofont-rounded-down" />
                   </a>
@@ -131,7 +132,8 @@ export default function Navbar() {
           <ul className="mobile-menu">
             <li className="menu-item-has-children"><Link to="/">Home</Link></li>
             <li className="menu-item-has-children"><Link to="/about">About Us</Link></li>
-            <li className="menu-item-has-children "><Link to="/portfolio">Our Portfolio</Link>
+            <li className="menu-item-has-children "><Link to="/portfolio">Our Portfolio</Link></li>
+            <li className="menu-item-has-children "><Link to="/ourteam">Our Team</Link>
             </li><li className="menu-item-has-children "><a href="#">Services</a>
               <ul className="dropdown">
                 <li>
