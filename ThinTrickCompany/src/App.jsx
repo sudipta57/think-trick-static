@@ -11,7 +11,8 @@ import Digital_Marketing from "./components/services/Digital_Marketing";
 import Graphics_and_Logo from "./components/services/Graphics_and_Logo";
 import Web from "./components/services/Web";
 import Team from "./components/Team/Team";
-
+import Demo from "./components/demo";
+import Blog from "./components/Blog/Blog";
 // import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
@@ -21,8 +22,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" index element={<Home />} />
+          <Route path="/demo" index element={<Demo />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/ourteam" element={<Team />} />
           <Route path="/web-service" element={<Web />} />
           <Route path="/android" element={<Android />} />
